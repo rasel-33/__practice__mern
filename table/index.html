@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS table Design</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        text-align: center;
+        border-color: white;
+      }
+      .heading {
+        background-color: rgb(145, 192, 201);
+        text-align: left;
+      }
+      th{
+        padding: 0.5rem;
+      }
+      td {
+        background-color: rgb(216, 227, 230);
+        padding: 0.5rem;
+      }
+      tr.deep-head {
+        background-color: rgb(37, 174, 184);
+      }
+
+      td.result {
+        background-color: rgba(235, 203, 125, 0.671);
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr class="deep-head">
+          <th rowspan="2">Main mode</th>
+          <th colspan="6">Area of Workspace</th>
+        </tr>
+        <tr class="heading">
+          <th>Central London</th>
+          <th>Rest of Inner London</th>
+          <th>Outer London</th>
+          <th>All London</th>
+          <th>Rest of Great Britain</th>
+          <th>Great Britain</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="heading">Car and van</td>
+          <td>48</td>
+
+          <td>32</td>
+
+          <td>25</td>
+
+          <td>29</td>
+
+          <td>20</td>
+
+          <td>20</td>
+        </tr>
+        <tr>
+          <td class="heading">Motorbike, moped, scooter</td>
+          <td>48</td>
+
+          <td>32</td>
+
+          <td>25</td>
+
+          <td>29</td>
+
+          <td>20</td>
+
+          <td>20</td>
+        </tr>
+        <tr>
+          <td class="heading">Bycycle</td>
+          <td>48</td>
+
+          <td>32</td>
+
+          <td>25</td>
+
+          <td>29</td>
+
+          <td>20</td>
+
+          <td>20</td>
+        </tr>
+        <tr>
+          <td class="heading">Bus and Coach</td>
+          <td>48</td>
+
+          <td>32</td>
+
+          <td>25</td>
+
+          <td>29</td>
+
+          <td>20</td>
+
+          <td>20</td>
+        </tr>
+        <tr>
+          <td class="heading">National Rail</td>
+          <td>48</td>
+
+          <td>32</td>
+
+          <td>25</td>
+
+          <td>29</td>
+
+          <td>20</td>
+
+          <td>20</td>
+        </tr>
+        <tr>
+          <td class="heading">Underground, tram, light rail</td>
+          <td>48</td>
+
+          <td>32</td>
+
+          <td>25</td>
+
+          <td>29</td>
+
+          <td>20</td>
+
+          <td>20</td>
+        </tr>
+        <tr>
+          <td class="heading">Walk</td>
+          <td>48</td>
+
+          <td>32</td>
+
+          <td>25</td>
+
+          <td>29</td>
+
+          <td>20</td>
+
+          <td>20</td>
+        </tr>
+        <tr>
+          <td class="result heading">All modes</td>
+          <td class="result">48</td>
+
+          <td class="result">32</td>
+
+          <td class="result">25</td>
+
+          <td class="result">29</td>
+
+          <td class="result">20</td>
+
+          <td class="result">20</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

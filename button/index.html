@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        color: white;
+        display: inline-block;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 0.35rem;
+        box-sizing: border-box;
+      }
+
+      /* primary btn styling */
+      a.btn-primary {
+        background-color: rgb(49, 49, 223);
+      }
+      a.btn-primary:hover {
+        background-color: rgba(39, 39, 177, 0.918);
+      }
+      a.btn-primary:active {
+        -webkit-box-shadow: 0px 0px 0px 2px rgba(211, 211, 221, 0.9);
+        -moz-box-shadow: 0px 0px 0px 2px rgba(211, 211, 221, 0.9);
+        box-shadow: 0px 0px 0px 2px rgba(211, 211, 221, 0.9);
+      }
+
+      /* secondary btn styling */
+      a.btn-secondary {
+        background-color: grey;
+      }
+      a.btn-secondary:hover {
+        background-color: rgb(110, 108, 108);
+      }
+      a.btn-secondary:active {
+        -webkit-box-shadow: 0px 0px 0px 2px rgba(153, 153, 153, 1);
+        -moz-box-shadow: 0px 0px 0px 2px rgba(153, 153, 153, 1);
+        box-shadow: 0px 0px 0px 2px rgba(153, 153, 153, 1);
+      }
+
+      /* success btn styling */
+      a.btn-success {
+        background-color: #38b000;
+      }
+      a.btn-success:hover {
+        background-color: #008000;
+      }
+      a.btn-success:active {
+        -webkit-box-shadow: 0px 0px 0px 2px rgba(152, 186, 136, 1);
+        -moz-box-shadow: 0px 0px 0px 2px rgba(152, 186, 136, 1);
+        box-shadow: 0px 0px 0px 2px rgba(152, 186, 136, 1);
+      }
+    </style>
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="#" class="btn-primary btn">Primary</a>
+    <a href="#" class="btn-secondary btn">Secondary</a>
+    <a href="#" class="btn-success btn">Success</a>
+  </body>
+</html>

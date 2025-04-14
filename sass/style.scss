@@ -1,0 +1,9 @@
+@use "partials/classes";
+@use "partials/colors";
+
+.header-area {
+  .text-area {
+    color: colors.$primary_color;
+    transition: classes.$transition_duration;
+  }
+}
