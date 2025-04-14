@@ -21,7 +21,7 @@ console.log(ch);
 ch = text.charCodeAt(index); // returns the ascii code number
 console.log(ch);
 
-// wecan directly use the index instead of method invokation
+// we can directly use the index instead of method invokation
 ch = text[index];
 console.log(ch);
 
@@ -64,6 +64,28 @@ console.log(mytext.trim().length);  // --this will provide us length for the tri
 
 
 // string padding padStart() & padEnd()
-let str = "****";
-let newStr = str.padStart(2, "$");
-console.log(newStr);
+let normalString = "****";
+let startPadded = normalString.padStart(6, "$"); // adds the characters from the given stringat the time of method invokation
+let endPadded = normalString.padEnd(6, "$")
+console.log(startPadded);
+console.log(endPadded);
+
+//repeat() method --it repeats the string itself for the given times
+console.log(startPadded.repeat(2));
+
+
+// replace(findString, placeString) --this method takes two strings as parameter and reaplces all the occurances of the matched string with the given string
+
+let longString = "Success is not born from a single moment of triumph, but From the countless hours of unseen effort.";
+console.log(longString.replace(/from/i, "between")); // replace()  --method replaces only the first occurance of the string and new string
+// in this exaample it changes only one "from" to "between"
+
+
+longString = longString.replaceAll(/from/g, "between") // (replaceAll() method needa to be g flag on) --replaces all the occurances of the string and returns a new string
+console.log(longString);
+// in this exaample it changes all the occurances of "from" to "between"
+
+
+// ===== split() method uses the argument as separator to create an array from given string
+normalString = "a*b*c*d*fg*h";
+console.log(normalString.split("*"));
