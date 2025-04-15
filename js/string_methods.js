@@ -89,3 +89,48 @@ console.log(longString);
 // ===== split() method uses the argument as separator to create an array from given string
 normalString = "a*b*c*d*fg*h";
 console.log(normalString.split("*"));
+
+
+
+// find a particular substring with
+// indexOf()   -- returns the first position when match is found otherwise returns -1
+text = "Please locate where 'locate' occurs!";
+console.log(text.indexOf('locate')); // returns 7  (first occurance position)
+//lastIndexOf()   --returns the first occurance of a subtring from the ending of the given string
+console.log(text.lastIndexOf('locate'));  // return 21 (first occurance from the ending)
+// we can add second parameter index to start the specifically from index to the begining for finding the match
+console.log(text.lastIndexOf('locate', 12)); // index is inclusive
+
+
+
+// string search() method ---works same as indexOf() method but way more powerfull
+console.log(text.search('locate'));
+// we can use regular expressions
+console.log(text.search(/locate/)); // it works on single match (if there are multiple match for this expression first one will be counted as fair)
+
+
+// match() method will return an array of matches finding a substring or regular expression
+text = "The rain in SPAIN stays mainly in the plain";
+let matches = text.match(/ain/gi);
+console.log(matches);
+
+matches = Array.from(text.matchAll(/ain/gi));
+console.log(matches);
+
+// include() method returns Boolean value true/false according to the presence of the substring
+text = "Hello world, welcome to the universe.";
+console.log(text.includes("world"));
+
+// additionally we can add an index to start the matching from that index 
+console.log(text.includes("world", 6));
+console.log(text.includes("world", 7));
+
+
+// startsWith() method return Boolean value true/false according to the starting with the substring
+console.log(text.startsWith('Hello'));
+console.log(text.startsWith('NoHello'));
+
+
+// endsWith() method return Boolean value true/false according to the ending with the substring
+console.log(text.endsWith('universe.'));  // with dot
+console.log(text.endsWith('universe')); // without dot
